@@ -1,0 +1,87 @@
+.sidebar11 {
+  position: relative;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.vertical-bar11 {
+  background-color: rgb(7, 10, 92);
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  margin-top: -25%;
+  margin-left: -40%;
+  gap: 15px;
+}
+
+.vertical-bar-icon11 {
+  width: 35px;
+  height: 35px;
+  margin: 30px 0;
+  transition: transform 0.3s ease;
+}
+
+.vertical-bar-icon11:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-content11 {
+  position: absolute; 
+  top:-20px; 
+  left: 48px;
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transform: translateX(-100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+
+
+
+.sidebar11.show-dropdown11 .dropdown-content11 {
+  transform: translateX(0);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.button44, .button55, .button66, .button77 {
+  padding: 10px;
+  text-align: center;
+  border: none;
+  color: white;
+  margin-top: 13%;
+  height: 10%;
+  width: 90%;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 5%;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+
+
+.button-icon {
+  margin-right: 8px;
+}
+
+.button44:hover, .button55:hover, .button66:hover, .button77:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05); /* Slightly increase the button size */
+  box-shadow: 0px 12px 20px 0px rgba(7, 7, 7, 0.3); /* Enhance the shadow effect */
+  color: #f0f0f0; /* Change text color on hover for better contrast */
+}

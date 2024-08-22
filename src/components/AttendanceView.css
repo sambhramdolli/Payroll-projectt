@@ -1,0 +1,109 @@
+.attendance-view {
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 60%; 
+  height: 100%; 
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  color: white;
+  margin-right: 500px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px; 
+}
+
+.search-container input,
+.search-container button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.search-container input {
+  color: white;
+  flex: 1;
+}
+
+.search-container button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+}
+
+.date-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-filters input {
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+}
+
+.attendance-table {
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.attendance-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th, .attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.attendance-table th {
+  background-color: blue;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}

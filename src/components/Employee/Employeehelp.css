@@ -1,0 +1,99 @@
+.help-container {
+    width: 60%;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    animation: fadeInEffect 0.5s ease-in-out;
+    color: #fcfcfc;
+    border: 2px solid #fbfbfb;
+    margin: 40px auto;
+    box-sizing: border-box;
+    background-color: #2f30312f; /* Example background for main team page */
+    margin-right: 50%;   
+}
+
+.help-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-label {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact-details {
+    color: white;
+}
+
+.contact-section {
+    margin-top: 10px;
+    /* background: #fafafa; */
+    padding: 20px;
+    
+    animation: slideInEffect 0.5s ease-in-out;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.back-button {
+    margin-left: 40%;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInEffect {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .help-container {
+        padding: 15px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .back-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.button-container {
+    margin-right: 900px;
+}
+
