@@ -134,10 +134,13 @@ function Myprofile() {
           </div>
         </div>
       </div>
-      <button className="admin-profile-button" onClick={handleBack}>Back</button>
+      <div className='profile-back'>
+      
       <button className="admin-edit-button" onClick={handleEditClick}>
         {isEditing ? 'Save' : 'Edit'}
       </button>
+      <button className="admin-profile-button" onClick={handleBack}>Back</button>
+      </div>
     </div>
   );
 }

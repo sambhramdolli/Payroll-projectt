@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './AdminStatusPage.css';
 
 function StatusPage({ name, id, status }) {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   const getStatusClass = (currentStatus) => {
     if (status === 'submitted' && currentStatus === 'submitted') return 'completed';
     if (status === 'resignation_approved' && (currentStatus === 'submitted' || currentStatus === 'resignation_approved')) return 'completed';
@@ -26,7 +29,10 @@ function StatusPage({ name, id, status }) {
           <span className='admin-status-label'>Resignation Approved</span>
         </div>
       </div>
-      <button className="admin-status-back-button" onClick={() => window.location.href = 0}>Back to Home</button>
+      {/* Use the navigate function to go back to the home page */}
+      <button className="admin-status-back-button" onClick={() => navigate(0)}>
+        Back to Home
+      </button>
     </div>
   );
 }

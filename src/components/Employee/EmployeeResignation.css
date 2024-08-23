@@ -1,5 +1,5 @@
 .form-container12, .status-page {
-  width: 60%;
+  width: 70%;
   margin: 40px auto;
   padding: 20px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
@@ -9,12 +9,12 @@
   color: #060606;
   border: 2px solid #fbfbfb;
   box-sizing: border-box;
-  margin-right: 50%;
+  margin-right: 40%;
 
 }
 
 .thg {
-  margin-left: 0%;
+  margin-left: 4%;
   color: #fff;
 }
 
@@ -25,12 +25,12 @@
 
 .form-group {
   margin-bottom: 20px;
-  margin-left: 2%; 
+  margin-left: 4%; 
   color: #fff;
 }
 
 textarea#reasonForLeaving {
-  width: 100%;
+  width: 93%;
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -118,3 +118,6 @@ button.button:hover {
 .discuss-container {
   margin-top: 10px;
 }
+
+
+

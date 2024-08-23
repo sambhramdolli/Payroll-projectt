@@ -7,8 +7,9 @@ import { FaHandsHelping, FaPrescription } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 import logoImage from "../assets/S.jpg"; // Your logo image
 import profileImage from "../assets/profile.png"; // Your profile image
+import homeButton from "../assets/homeButton.png"; 
 
-const NavBar = ({ onButtonClick }) => {
+const NavBar = ({ onButtonClick,onHomeClick }) => {
   const [dropdownVisible, setDropdownVisible] = useState({
     profile: false,
     ticket: false,
@@ -57,6 +58,11 @@ const NavBar = ({ onButtonClick }) => {
     <nav className="navBar">
       <div className="navBar-logoContainer">
         <img src={logoImage} alt="Logo" className='navBar-logo' />
+      </div>
+      <div className="employee-navbar__home-button-container">
+        <button className="employee-navbar__home-button" onClick={onHomeClick}>
+          <img src={homeButton} alt="Home" className="employee-navbar__home-button-image" />
+        </button>
       </div>
 
       <div className='navBar-nav'>

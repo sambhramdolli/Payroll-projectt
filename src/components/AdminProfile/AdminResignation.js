@@ -121,7 +121,7 @@ function AdminResignation() {
 
             <div className="admin-form-buttons">
               <button type="button" className="admin-button admin-button-discuss" onClick={handleDiscussWithManager}>Discuss with Manager</button>
-              <button type="button" className="admin-button admin-button-back" onClick={handleBack}></button>
+              <button type="button" className="admin-button admin-button-back" onClick={handleBack}><IoReturnDownBackSharp /></button>
               <button type="submit" className="admin-button admin-button-submit">Proceed</button>
             </div>
           </form>

@@ -1,21 +1,17 @@
 import React, { useState, useContext } from 'react';
-import { EmployeeContext } from '../contexts/EmployeeContext'; 
-import './addEmployee.css'; 
-
+import { EmployeeContext } from '../contexts/EmployeeContext';
+import './addEmployee.css';
 const AddEmployee = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [project, setProject] = useState('');
   const [role, setRole] = useState('Employee'); // Default to Employee
   const [showPopup, setShowPopup] = useState(false);
-
   const { addEmployee } = useContext(EmployeeContext);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const newEmployee = { name, email, project, role, experience: '0 years', skills: [] };
     addEmployee(newEmployee);
-
     setName('');
     setEmail('');
     setProject('');
@@ -23,14 +19,13 @@ const AddEmployee = () => {
     setShowPopup(true);
     setTimeout(() => setShowPopup(false), 3000);
   };
-
   return (
     <div className="employee-form-container">
       <h1 className="employee-form-title">Add Employee</h1>
       <form onSubmit={handleSubmit}>
         <div className="employee-form-group">
           <input
-            type="text"
+            type="name"
             id="name"
             className="employee-input-field"
             value={name}
@@ -91,7 +86,4 @@ const AddEmployee = () => {
     </div>
   );
 };
-
 export default AddEmployee;
-
-

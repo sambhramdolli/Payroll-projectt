@@ -1,13 +1,18 @@
 .admin-help-menu {
-    width: 50%;
-    margin: 0%;
+    width: 70%;
+    margin: 40px auto;
     padding: 20px;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.877);
+    background-color: #2f30312f;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     animation: adminFadeIn 0.5s ease-in-out;
-    max-height: 80vh;
+    max-height: 70vh;
     text-align: center;
+    color: #ffffff;
+    border: 2px solid #fbfbfb;
+    box-sizing: border-box;
+    margin-right: 40%;
+
 }
 
 .admin-help-title {

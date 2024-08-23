@@ -1,15 +1,20 @@
 /* Main settings box */
 .admin-settings-box {
-  width: 50%;
-  margin: 10 auto;
+  width: 70%;
+  margin: 40px auto;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.87);
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
   overflow-y: auto;
-  max-height: 75vh; /* Responsive height */
-  margin-left: 10%;
+   /* Responsive height */
+  color: #ffffff;
+  border: 2px solid #fbfbfb;
+  box-sizing: border-box;
+  background-color: #2f30312f;
+  margin-right: 40%;
+
 }
 
 .admin-setting-title{

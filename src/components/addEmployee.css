@@ -1,72 +1,90 @@
 .employee-form-container {
-  width: 60%;
+  width: 70%; /* Changed to 40% width */
   padding: 20px;
   border: 1px solid #ccc;
-  background-color: rgb(7, 10, 92);;
+  background-color: #2f30312f;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 60vh;
+  margin: 40px auto;
+  color: #FFFFFF;
+  border: 2px solid #FBFBFB;
+  box-sizing: border-box;
+  margin-right: 40%;
 }
+/* Title style */
 .employee-form-title {
   text-align: center;
   margin-bottom: 30px;
   color: white;
 }
+/* Form group style */
 .employee-form-group {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  width: 100%; /* Full width for all form groups */
 }
+/* Input field styles */
 .employee-input-field {
-  width: 100%;
-  padding: 10px 30px;
+  width: 100%; /* Full width for input fields */
+  padding: 10px 15px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 1%;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-left: auto;
 }
+/* Input label styles */
 .employee-input-label {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 5px;
   transform: translateY(-50%);
   color: #888;
   transition: 0.2s;
   pointer-events: none;
+  background-color: transparent;
 }
+/* Focused and non-placeholder-shown state for input fields */
 .employee-input-field:focus + .employee-input-label,
 .employee-input-field:not(:placeholder-shown) + .employee-input-label {
   top: -10px;
-  left: 10px;
+  left: 15px;
   color: #FFFFFF;
-  font-size: 12px;
 }
+/* Name container styles */
+.employee-name-container {
+  width: 100%; /* 100% width for the name container */
+}
+/* Submit button styles */
 .employee-submit-button {
-  width: 100%;
-  padding: 10px;
-  /* background-color: #F2F5F9; */
+  width: 20%; /* 100% width for the button */
+  padding: 12px;
   border: none;
   border-radius: 5px;
-  color: #0D0C0C;
-  font-size: 16px;
+  background-color: #04AA6D;
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.employee-input-label{
- background-color: transparent;
+/* Button hover effect */
+.employee-submit-button:hover {
+  background-color: #45A049;
+  transform: scale(1.05);
 }
+/* Popup styles */
 .popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px 40px;
-  background-color: #DDE7DD;
-  color: rgb(232, 222, 222);
+  background-color: #357235;
+  color: #333;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 18px;
   text-align: center;
-  z-index: 1000;
+  z-index: 2050;
   opacity: 0.9;
-  margin-left: -110%;
-  margin-top: 80%;
+  margin-left: 33%;
+ 
 }
-

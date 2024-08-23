@@ -1,31 +1,27 @@
 import React from 'react';
-import './Employeehelp.css'; // Updated the CSS file name to match the component name
+import './Employeehelp.css'; // Import CSS file for styles
 import { useNavigate } from 'react-router-dom';
-
-const Help = () => {
+import { IoReturnDownBack } from "react-icons/io5";
+const EmployeeHelp = () => {
     const navigate = useNavigate();
-
     const handleBack = () => {
-        navigate(0); // Go back one step in history
+        navigate(0);
     };
-
     return (
-        <div className="help-container">
-            <h1 className="help-title">Help Menu</h1>
-            <p className="contact-label">Contact Information</p>
-            <div className="contact-section">
-                <ul className="contact-list">
-                    <li className="contact-item">Company Email: company@example.com</li>
-                    <li className="contact-item">HR Email: hr@example.com</li>
-                    <li className="contact-item">Manager Email: manager@example.com</li>
-                    <li className="contact-item">Team Leader Email: teamleader@example.com</li>
+        <div className="emp-help-menu">
+            <h2 className='emp-help-title'>Help Menu</h2>
+            <p className='emp-help-contact'>Contact Information:</p>
+            <div className="emp-contact-info">
+                <ul className="emp-help-list">
+                    <li className="emp-help-list-item">Company Email: syliqonsoftware.com</li>
+                    <li className="emp-help-list-item">HR Email: hr@syliqonsoftware.com</li>
+                    <li className="emp-help-list-item">Manager Email: manager@syliqonsoftware.com</li>
+                    <li className="emp-help-list-item">Team Leader Email: teamleader@syliqon.com</li>
                 </ul>
             </div>
-            
-            <button className="back-button" onClick={handleBack}>Back</button>
+            <button className="emp-back-button" onClick={handleBack}> Back</button>
         </div>
     );
 };
-
-export default Help;
+export default EmployeeHelp;
 

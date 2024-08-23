@@ -7,18 +7,15 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 60%;
+    width: 70%;
     height: 70vh;
     overflow-y: auto;
-    color: #060606;
+    color: #fbfafa;
     margin: 40px auto;
     box-sizing: border-box;
     background-color: #2f30312f; /* Example background for main team page */
-    margin-right: 50%;
+    margin-right: 40%;
     scrollbar-width: none;
-
-    
-    
 }
 
 .raise-ticket-container::before {
@@ -62,6 +59,8 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #fff;
+    margin-left: auto;
 }
 
 .raise-ticket-form-group textarea {
@@ -71,8 +70,8 @@
 .raise-ticket-form-row {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    width: 95%;
+    gap: 30px;
+    width: 100%;
 }
 
 .raise-ticket-half-width {
@@ -89,21 +88,21 @@
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    background-color: #0056B3;
     color: white;
     cursor: pointer;
     width: 20%;
 }
 
 .raise-ticket-submit-button:hover {
-    background-color: #0056b3;
+    background-color: #0056B3;
 }
 
 .raise-ticket-cancel-button {
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
-    background-color: blue;
+    
     color: white;
     cursor: pointer;
     width: 20%;
@@ -123,4 +122,15 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+}
+
+.raise-ticket-cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056B3;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 60%;
 }

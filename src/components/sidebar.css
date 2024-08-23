@@ -5,7 +5,6 @@
 
 .vertical-bar {
   background-color: rgb(7, 10, 92);
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   width: 80px;
   height: 100%;
   cursor: pointer;
@@ -17,14 +16,14 @@
   padding-top: 30px;
   margin-top: -25%;
   margin-left: -40%;
-  /* z-index: -1; */
-  gap: 30px;
+  gap: 15px;
 }
 
 .vertical-bar-icon {
   width: 35px;
   height: 35px;
   margin: 30px 0;
+  transition: transform 0.3s ease;
 }
 
 .vertical-bar-icon:hover {
@@ -35,7 +34,6 @@
   position: absolute; 
   top:-20px; 
   left: 48px;
-  background-color: rgb(7, 10, 92);
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   height: 100%;
   width: 300px;
@@ -45,13 +43,14 @@
   transform: translateX(-125%);
   pointer-events: none;
   z-index: 3;
+
 }
 .sidebar.show-dropdown .dropdown-content {
   transform: translateX(0);
   pointer-events: auto;
 }
 
-.button4, .button5, .button6, .button7, .button8 {
+.button4, .button5, .button6, .button7 {
   padding: 10px;
   text-align: center;
   border: none;
@@ -64,11 +63,16 @@
   cursor: pointer;
   margin-left: 5%;
   background-color: transparent;
-  box-shadow: 0px 8px 16px 0px rgba(187, 159, 159, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
 }
 
-.button4:hover, .button5:hover, .button6:hover, .button7:hover, .button8:hover {
-  background-color: transparent;
+.button4:hover, .button5:hover, .button6:hover, .button7:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05); /* Slightly increase the button size */
+  box-shadow: 0px 12px 20px 0px rgba(7, 7, 7, 0.3); /* Enhance the shadow effect */
+  color: #f0f0f0; /* Change text color on hover for better contrast */
 }
 
 

@@ -223,7 +223,7 @@ const RaiseTicket = () => {
                         <button type="submit" disabled={loading}>
                             {loading ? 'Submitting...' : 'Submit'}
                         </button>
-                        <button type="button" onClick={handleCancel} disabled={loading}>
+                        <button type="button" onClick={handleCancel} disabled={loading} className="raise-ticket-cancel-button">
                             Cancel
                         </button>
                     </div>
@@ -234,3 +234,5 @@ const RaiseTicket = () => {
 };
 
 export default RaiseTicket;
+
+

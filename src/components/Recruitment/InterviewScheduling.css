@@ -1,12 +1,18 @@
 .unique-interview-container {
-    width: 50%;
-    padding: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FBFBFB;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.938);
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2f30312f;
+    margin-right: 40%;
+    height: 70vh;
     overflow-y: auto;
     scrollbar-width: none;
-    max-height: 73vh;
-    margin: 10 auto; /* Center the container horizontally */
+    /* Center the container horizontally */
 }
 
 .unique-interview-list {
@@ -26,7 +32,7 @@
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.699);
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */

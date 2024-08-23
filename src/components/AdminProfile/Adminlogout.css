@@ -2,15 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    margin-right:30% ;
+    
 }
 
 .admin-logout-content {
-    width: 40%;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.897);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fbfbfb;
+    border-radius: 10px;
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2f30312f;
+    margin-right: 40%;
     text-align: center;
     
 }

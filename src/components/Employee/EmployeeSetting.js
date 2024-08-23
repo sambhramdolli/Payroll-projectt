@@ -107,32 +107,7 @@ const EmployeeSetting = () => {
     <div className="settings-box">
       <div className="settings-container">
         <div className="settings-content">
-          {/* Edit Profile Section */}
-          <div className="half-width">
-            <h3>Edit Profile</h3>
-            <button onClick={handleToggleEditProfile}>
-              {showEditProfile ? 'Hide Edit Profile' : 'Edit Profile'}
-            </button>
-            {showEditProfile && (
-              <div className="edit-profile-section">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  value={name}
-                  onChange={handleChangeName}
-                />
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageChange}
-                />
-                <img src={profileImage} alt="Profile" className="profile-image" />
-                <div className='ddk'>
-                <button className='dds' onClick={handleSaveProfile}>Save Profile</button>
-                </div>
-              </div>
-            )}
-          </div>
+          
 
           {/* History Section */}
           {showHistory && (

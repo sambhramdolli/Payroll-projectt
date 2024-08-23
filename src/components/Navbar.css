@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  flex-wrap: wrap;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navBar-logoContainer {
@@ -29,6 +29,35 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.employee-navbar__home-button {
+  background: none; /* Remove any background */
+  padding: 0; /* Remove any padding */
+  border: none; /* Remove any border */
+  cursor: pointer; /* Make it clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-navbar__home-button-image {
+  width: 50px; /* Adjust the size of your home button image */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-navbar__home-button:hover .employee-navbar__home-button-image {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.employee-navbar__home-button:active .employee-navbar__home-button-image {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+
 .navBar-nav {
   display: flex;
   align-items: center;
@@ -38,7 +67,7 @@ body {
 .navBar-dropdownToggle {
   position: relative;
   cursor: pointer;
-  margin-right: 20px;
+ 
   z-index: 1000; /* Ensures dropdown is on top of most other elements */
 }
 
@@ -46,11 +75,13 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50%;
+ 
 }
 
 .navBar-dropdownHeader {
   display: flex;
   align-items: center;
+  
 }
 
 .navBar-dropdownTitle {
@@ -66,18 +97,20 @@ body {
 
 /* Dropdown menu styles */
 .navBar-dropdownMenu-employee, .navBar-dropdownMenu-recruitment {
-  position: absolute;
   top: 100%;
   right: 0;
-  font-size: 25px;
   border-radius: 5px;
- 
   background-color: rgb(7, 10, 92);
-  z-index: 1001; /* Ensures dropdown is on top of other elements */
+   /* Ensures dropdown is on top of other elements */
 }
 
 .navBar-menuItem {
-  background-color: rgb(7, 10, 92);
+  font-size: 18px;
+  z-index: 1001;
+  position: absolute;
+  margin-top: 20px;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   color: rgb(233, 225, 225);
   padding: 10px 20px;
   border: none;
@@ -88,21 +121,32 @@ body {
 
 .navBar-profileDropdownMenu {
   position: absolute;
-  top: 100%;
+  top: 100px;
   right: 0;
   font-size: 25px;
   border-radius: 5px;
- 
+  z-index: 1000;
   background-color: rgb(7, 10, 92);
-  z-index: 1001; /* Ensures dropdown is on top of other elements */
+  padding: 10px;
 }
 
 .navBar-profileMenuItem {
-  display: flex;
+  padding: 25px;
+  margin-left: 0px;
+  margin-right: 10px;
+  display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
   text-decoration: none;
-  color: #ddd;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  gap: 30px;
 }
 
 .navBar-profileIcon {

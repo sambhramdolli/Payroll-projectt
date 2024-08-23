@@ -1,13 +1,18 @@
 /* Base Styles */
-.admin-form-container {
-  width: 65%;
-  margin: 0 auto;
+.admin-form-container{
+  width: 70%;
+  margin: 40px auto;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.849);
-  border-radius: 8px;
-  background-color: rgb(7, 10, 92);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #2f30312f;
   margin-right: 900px;
   transition: all 0.3s ease;
+  color: #ffffff;
+  border: 2px solid #fbfbfb;
+  box-sizing: border-box;
+  margin-right: 40%;
+  height: 70vh;
 }
 .reason-title{
   color: white;
@@ -23,11 +28,12 @@
   margin-bottom: 20px;
   width: 90%;
   padding: 10px;
-  background-color: #e9ecef;
+  background-color: #e9ecefbd;
   border-radius: 8px;
   text-align: center;
-  margin-left: 2%;
+  margin-left: 4%;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .admin-employee-details p {
@@ -37,8 +43,9 @@
 }
 
 .admin-form-group {
+  width: 90%;
   margin-bottom: 20px;
-  margin-left: 2%;
+  margin-left: 4%;
   transition: margin-left 0.3s ease, margin-bottom 0.3s ease;
 }
 
@@ -109,10 +116,14 @@ textarea#reasonForLeaving {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+
+
 .admin-status-check-icon:hover {
   color: #0056b3;
   transform: rotate(20deg);
 }
+
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {

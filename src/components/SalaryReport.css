@@ -1,39 +1,37 @@
 .salary-report-container {
-  width: 60%;
+  width: 50%;
   margin: 40px auto;
   padding: 20px;
-  border: 2px solid #fbfbfb;
+  border: 2px solid #FBFBFB;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   height: 400px;
-  background-color: #2f30312f; 
+  background-color: #2f30312f;
   color: #060606;
   box-sizing: border-box;
-  margin-right: 50%;
+  margin-right: 40%;
   height: 70vh;
-
 }
-
 .h0 {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 6px;
-  color: #f8f3f3;
+  color: #F8F3F3;
 }
-
 .form-group {
   position: relative;
   margin-top: 50px;
 }
-
-.salary-report-input {
-  width: 100%;
+#employeeName,
+#month,
+#salary {
+  width: 80%;
   padding: 10px 10px 10px 30px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 5px;
+ margin-left: auto;
 }
-
 .salary-report-label {
   position: absolute;
   left: 30px;
@@ -43,16 +41,13 @@
   color: #888;
   transition: 0.2s;
 }
-
 .salary-report-input:focus + .salary-report-label,
 .salary-report-input:not(:placeholder-shown) + .salary-report-label {
   top: -15px;
   /* transform: translateY(-50%) scale(0.8); */
-  color: #f6f8f9;
-  margin-left: -33px;
+  color: #F6F8F9;
+  margin-left: -35px;
 }
-
-
 .future-date-popup {
   color: red;
   font-size: 12px;
@@ -62,11 +57,9 @@
   padding: 10px;
   border: none;
   color: rgb(3, 3, 3);
-  
   width: 45%;
   box-sizing: border-box;
   cursor: pointer;
-  margin-left: 25%;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -80,25 +73,22 @@
     width: 98%;
     height: 430px;
 }
-
 .pdf-viewer h3 {
   margin-top: 0;
   font-size: 18px;
 }
-
 .pdf-viewer iframe {
   border: none;
   width: 100%;
   height: 400px;
   margin-top: 10px;
 }
-
 .download-button {
   display: block;
   width: 110%;
   padding: 10px;
   font-size: 16px;
-  background-color: #011e7c;
+  background-color: #011E7C;
   color: rgb(1, 1, 1);
   border: none;
   border-radius: 4px;
@@ -107,9 +97,8 @@
   margin-left: -5%;
   color: white;
 }
-
 .download-button:hover {
-  background-color: #005f6b;
+  background-color: #005F6B;
 }
 .pdf{
   margin-top: -5%;
@@ -117,8 +106,6 @@
   height: 400px;
   margin-left: -5%;
 }
-
-
 .slide {
   transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
   -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
@@ -129,7 +116,6 @@
   -moz-transform: translateX(100%);
   -o-transform: translateX(100%);
 }
-
 .slide-in {
   transform: translateX(0%);
 }

@@ -1,139 +1,172 @@
-
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-  .login-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 210vh;
-    background-image: url('./assets/bg.png'); 
-    position: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .login-form {
-    background-color: white;
-    padding: 2rem;
-    width: 32%;
-    margin-left: -7%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 0%;
-    /* background-image: url('IMG-20240608-WA0257 (1).jpg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
-  .login-admin{
-    color: black;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .label{
-    display: block;
-    margin-top: -3%;
-    margin-left: -48%;
-  }
-  
-  input {
-    width: 60%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.4); 
 }
-
-  .sign-in-button {
-    width: 60%;
-    padding: 0.75rem;
-    margin-top: 5%;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #564caf;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem; 
-    margin-left: 20%;
-    transition: transform 0.3s, border 0.3s;
-  }
-
-
-  .sign-in-button:hover, .google-button:hover {
-    transform: scale(1.05); 
-  }
-
-
-  .button-group {
-     width: 1%;
-    padding: 0.75rem;
-    transition: transform 0.3s, border 0.3s;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-left: 47%;
-    color: rgb(8, 7, 7);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-  }
-  
-  .signup-prompt {
-    margin-top: 2rem;
-    color: #555;
-    margin-left: -57%;
-  }
-  
-  .forgot-password-admin {
-    background: none;
-    border: none;
-    color: #007BFF;
-    text-decoration: underline;
-    cursor: pointer;
-    margin-top: -15%;
-    margin-left: -75.8%;
-  }
-  
-  .create-new-button {
-    background: none;
-    border: none;
-    color: #007BFF;
-    text-decoration: underline;
-    cursor: pointer;
-    margin-top: -5.7%;
-    margin-left: -3%;
-  }
-  .google-logo {
-    width: 20px;
-    height: 20px;
-    margin-left: 2%;
-  }
-  .logout-button {
-    background-color: #f44336; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .logout-button:hover {
-    background-color: #d32f2f;
-  }
-  .your-logo {
-    width: 200px; 
-    height: auto;
-    margin-bottom: -40px;
-    margin-top: -50px;
-  }
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 75%;
+  text-align: center;
+  margin-top: 3%;
+}
+.login-admin {
+  color: black;
+}
+.form-group {
+  text-align: left;
+  position: relative;
+  margin-left: auto;
+}
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: black;
+  margin-bottom: auto;
+}
+.input-icon-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.input-icon-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+}
+.input-icon-container img {
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.sign-in-button {
+  width: 70%;
+  padding: 0.75rem;
+  margin-top: 5%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #564CAF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-left: 20%;
+  transition: transform 0.3s, border 0.3s;
+}
+.sign-in-button:hover, .google:hover {
+  transform: scale(1.05);
+}
+.button-group {
+  width: 1%;
+  padding: 0.75rem;
+  transition: transform 0.3s, border 0.3s;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 50%;
+  color: rgb(8, 7, 7);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-prompt {
+  margin-top: 2rem;
+  color: #555;
+  margin-left: 60%;
+}
+.forgot-password-admin {
+  background: none;
+  border: none;
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: -15%;
+  margin-right:55%;
+}
+.create-new-button {
+  background: none;
+  border: none;
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: -5.7%;
+  margin-left: -3%;
+}
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 2%;
+}
+.logout-button {
+  background-color: #F44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.logout-button:hover {
+  background-color: #D32F2F;
+}
+.custom-input-icon {
+  position: absolute;
+  left: 10px; /* Position the icon to the left */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: #888;
+}
+.your-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: -40px;
+  margin-top: -50px;
+}
+.input-icon-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px; /* Adjust padding to give space for the icon */
+}
+.input-icon-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border-radius: 5px;
+}
+.custom-input-icon {
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 90%; /* Position the icon to the left */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: #4c4949; /* Icon color */
+  font-size: 20px; /* Icon size */
+}
+.form-group img {
+  width: 250px;
+  margin-bottom: -80px;
+}
+.input-icon-container img.custom-input-icon {
+  margin-right: 10px; /* Space between the icon and the input field */
+}
