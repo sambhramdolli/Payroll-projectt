@@ -2,35 +2,32 @@
     position: fixed;
     top: 22%;
     right: 0;
-    width: 340px;
-    height: 400px;
+    width: 200px; /* Decrease this value as needed */
+    height: 5%; /* Keeps height automatic based on content */
     z-index: -1;
-    background-color: #f1f1f1;
+    background-color: #2f30312f;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
     border: 5px solid #ccc;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
-
 .slider-container img {
     width: 100%;
     height: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 5px;
 }
-
 .slide {
     text-align: center;
-} 
-
-.image-details {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #333;
-    font-weight: bold;
 }
-
+.image-details {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    height: fit-content;
+}
 @media (min-width: 320px) and (max-width: 480px) {
     /* Mobile devices - Hide the slider container */
     .slider-container {
@@ -40,12 +37,10 @@
         border: 5px solid #ccc;
         border-radius: 5px;
     }
-
     .image-details {
         font-size: 5px;
     }
 }
-
 @media (min-width: 481px) and (max-width: 768px) {
     /* Small tablets */
     .slider-container {
@@ -55,12 +50,10 @@
         border: 5px solid #ccc;
         border-radius: 5px;
     }
-
     .image-details {
         font-size: 13px;
     }
 }
-
 @media (min-width: 769px) and (max-width: 1024px) {
     /* Tablets and small desktops */
     .slider-container {
@@ -70,12 +63,10 @@
         border: 5px solid #ccc;
         border-radius: 5px;
     }
-
     .image-details {
         font-size: 14px;
     }
 }
-
 @media (min-width: 1025px) {
     /* Desktops and larger screens */
     .slider-container {
@@ -85,7 +76,6 @@
         border: 5px solid #ccc;
         border-radius: 10px;
     }
-
     .image-details {
         font-size: 15px;
     }

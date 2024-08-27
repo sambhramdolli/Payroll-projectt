@@ -7,13 +7,12 @@ import './SalaryReport.css';
 const SalaryReport = () => {
   const [employeeName, setEmployeeName] = useState('');
   const [month, setMonth] = useState('');
-  const [salary, setSalary] = useState('');
   const [pdfData, setPdfData] = useState(null);
-  const [showPreview, setShowPreview] = useState(false); 
+  const [showPreview, setShowPreview] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Salary Report Added:', { employeeName, month, salary });
+    console.log('Salary Report Added:', { employeeName, month });
 
     const doc = new jsPDF('p', 'mm', 'a4');
 
@@ -45,12 +44,10 @@ const SalaryReport = () => {
     doc.setLineWidth(0.5);
     doc.line(10, 50, 200, 50);
 
-    
     doc.setFontSize(14);
     const labels = ['Employee Name', 'Employee ID', 'Pay Date', 'Paid Days', 'LOP Days'];
     const values = [employeeName, 'EMP 0092', '15/04/2024', '31', '0'];
 
-    
     let maxLabelWidth = 0;
     labels.forEach(label => {
       const labelWidth = doc.getTextWidth(label);
@@ -64,7 +61,6 @@ const SalaryReport = () => {
     const lineHeight = 10;
     const colonOffset = 2;
 
- 
     doc.setFontSize(12);
     doc.setFont('helvetica', 'bold');
     doc.text('EMPLOYEE SUMMARY', startX, startY - lineHeight);
@@ -84,15 +80,13 @@ const SalaryReport = () => {
     });
 
     const netPayableBoxTopY = 55;
-    doc.setFillColor(224, 255, 224); 
-    doc.rect(130, netPayableBoxTopY, 60, 20, 'F'); 
+    doc.setFillColor(224, 255, 224);
+    doc.rect(130, netPayableBoxTopY, 60, 20, 'F');
 
-    
-    const userEnteredSalary = parseFloat(salary) || 0;
+    const userEnteredSalary = 36000; // Fixed salary since the input box is removed
     const deductions = 2700.00;
     const netPayable = userEnteredSalary - deductions;
 
-   
     doc.setFontSize(16);
     doc.setFont('helvetica', 'bold');
     const netPayableText = `${netPayable.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -142,8 +136,7 @@ const SalaryReport = () => {
     doc.setFont('helvetica', 'normal');
     doc.text('Gross Earnings - Total Deductions', 26, boxTopY + 14);
 
- 
-    const totalNetPayable = netPayable; 
+    const totalNetPayable = netPayable;
     doc.setFontSize(16);
     doc.setFont('helvetica', 'bold');
     const totalNetPayableText = `${totalNetPayable.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -159,7 +152,6 @@ const SalaryReport = () => {
     const generatedPdfData = doc.output('blob');
     setPdfData(generatedPdfData);
 
-   
     setShowPreview(true);
   };
 
@@ -175,7 +167,7 @@ const SalaryReport = () => {
     document.body.removeChild(a);
 
     setPdfData(null);
-    setShowPreview(false); 
+    setShowPreview(false);
   };
 
   const handleMonthChange = (event) => {
@@ -189,10 +181,7 @@ const SalaryReport = () => {
     }
   };
 
-  
-  const isSubmitDisabled = !employeeName || !month || !salary;
-
-  
+  const isSubmitDisabled = !employeeName || !month;
 
   return (
     <div className="salary-report-container">
@@ -220,32 +209,23 @@ const SalaryReport = () => {
           />
           <label htmlFor="month" className="salary-report-label">Month</label>
         </div>
-        <div className="form-group">
-          <input
-            type="number"
-            id="salary"
-            className="salary-report-input"
-            value={salary}
-            onChange={(e) => setSalary(e.target.value)}
-            required
-          />
-          <label htmlFor="salary" className="salary-report-label">Salary</label>
-        </div>
         <button className='submit' type="submit" disabled={isSubmitDisabled}>Submit Report</button>
       </form>
 
-
-      
       {pdfData && (
-      <div className={`pdf-viewer-container slide ${showPreview ? 'slide-in' : ''}`}>
-        <div className="pdf-viewer">
-          <embed src={URL.createObjectURL(pdfData)} type="application/pdf" className='pdf' width="100%" height="450px" />
-          <button className="download-button" onClick={handleDownload}>Download PDF</button>
+        <div className="pdf-preview">
+          <h3>Salary Report Preview</h3>
+          <iframe
+            src={URL.createObjectURL(pdfData)}
+            title="PDF Preview"
+            width="100%"
+            height="400px"
+          ></iframe>
+          <button onClick={handleDownload}>Download PDF</button>
         </div>
-      </div>
-    )}
-  </div>
-);
+      )}
+    </div>
+  );
 };
 
 export default SalaryReport;
