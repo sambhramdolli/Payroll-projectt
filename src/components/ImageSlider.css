@@ -5,26 +5,22 @@
     width: 200px; /* Decrease this value as needed */
     height: 5%; /* Keeps height automatic based on content */
     z-index: -1;
-    background-color: #2f30312f;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
-    border: 5px solid #ccc;
-    border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 .slider-container img {
     width: 100%;
     height: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
     border-radius: 5px;
 }
 .slide {
     text-align: center;
 }
 .image-details {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 30px;
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
     height: fit-content;
 }
@@ -34,7 +30,6 @@
         width: 20%;
         height: 30px;
         padding: 5px;
-        border: 5px solid #ccc;
         border-radius: 5px;
     }
     .image-details {
@@ -47,8 +42,7 @@
         width: 25%;
         height: 40px;
         padding: 5px;
-        border: 5px solid #ccc;
-        border-radius: 5px;
+       
     }
     .image-details {
         font-size: 13px;
@@ -60,8 +54,7 @@
         width: 30%;
         height: 50px;
         padding: 5px;
-        border: 5px solid #ccc;
-        border-radius: 5px;
+        
     }
     .image-details {
         font-size: 14px;
@@ -73,8 +66,7 @@
         width: 340px;
         height: 400px;
         padding: 10px;
-        border: 5px solid #ccc;
-        border-radius: 10px;
+        
     }
     .image-details {
         font-size: 15px;

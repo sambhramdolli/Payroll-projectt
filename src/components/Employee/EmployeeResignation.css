@@ -1,21 +1,13 @@
 .form-container12, .status-page {
-  width: 70%;
   margin: 40px auto;
   padding: 20px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  background-color: #2f30312f;
-  margin-right: 900px;
   color: #060606;
-  border: 2px solid #fbfbfb;
-  box-sizing: border-box;
   margin-right: 40%;
-
 }
 
 .thg {
   margin-left: 4%;
-  color: #fff;
+  color: #000000;
 }
 
 .employee-details {
@@ -26,7 +18,7 @@
 .form-group {
   margin-bottom: 20px;
   margin-left: 4%; 
-  color: #fff;
+  color: #010101;
 }
 
 textarea#reasonForLeaving {
@@ -35,7 +27,7 @@ textarea#reasonForLeaving {
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 
@@ -87,7 +79,7 @@ button.button:hover {
   margin-top: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: #dde1e6;
+  color: #000000;
   
 }
 
@@ -97,22 +89,24 @@ button.button:hover {
 
 .form-container h2, .status-page h2 {
   margin-bottom: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 .employee-details {
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #e9ecef;
+  background-color: #fff;
   border-radius: 8px;
   text-align: center;
   margin-left: 2%;
+  border: none;
+  border-radius: 5px;
 }
 
 .employee-details p {
   margin: 5px 0;
-  color: #333;
+  color: #000000;
 }
 
 .discuss-container {

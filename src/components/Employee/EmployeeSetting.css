@@ -1,16 +1,14 @@
 .settings-box {
-  width: 70%; /* Set width to 50% */
   padding: 20px;
   border: 2px solid #fbfbfb;
   border-radius: 10px;
-  background: transparent;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   text-align: center; /* Center align content */
   animation: fadeIn 0.5s; /* Fade-in animation */
   color: white;
   margin: 40px auto;
   box-sizing: border-box;
-  background-color: #2f30312f; /* Example background for main team page */
+/* Example background for main team page */
   margin-right: 40%;
    /* Limit height to 80% of the viewport height */
   overflow-y: auto; /* Enable vertical scrolling */

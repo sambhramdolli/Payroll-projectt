@@ -6,6 +6,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
+ 
 }
 
 .employee-page {
@@ -192,16 +193,7 @@ body {
 }
 
 
-.employee-slide {
-  transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
-  -webkit-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
-  -moz-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
-  -o-transition: all 0.8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -o-transform: translateX(100%);
-}
+
 
 .employee-slide-in {
   transform: translateX(0%);

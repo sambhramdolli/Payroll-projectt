@@ -1,26 +1,21 @@
 /* Base Styles */
 .admin-form-container{
-  width: 70%;
   margin: 40px auto;
   padding: 20px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  background-color: #2f30312f;
   margin-right: 900px;
   transition: all 0.3s ease;
-  color: #ffffff;
-  border: 2px solid #fbfbfb;
+  color: #000;
   box-sizing: border-box;
   margin-right: 40%;
   height: 70vh;
 }
 .reason-title{
-  color: white;
+  color: rgb(0, 0, 0);
   margin-right: 70%;
 }
 .admin-heading {
   margin-left: 0%;
-  color: #fff;
+  color: #000;
   transition: color 0.3s ease;
 }
 
@@ -88,7 +83,7 @@ textarea#reasonForLeaving {
 .admin-button-back {
   margin-top: 30px;
   background-color: transparent;
-  color: #e6e9ec;
+  color: #08539d;
   border: none;
   font-size: 25px;
   flex: 1; 
@@ -111,17 +106,15 @@ textarea#reasonForLeaving {
   right: 20px;
   font-size: 24px;
   cursor: pointer;
-  color: #dde1e6;
+  color: #000;
   margin-right: 35%;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
-
-
 .admin-status-check-icon:hover {
   color: #0056b3;
   transform: rotate(20deg);
 }
+
 
 
 
@@ -184,7 +177,7 @@ textarea#reasonForLeaving {
   }
 
   .reason-title {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 30%;
     transition: color 0.3s ease, margin-right 0.3s ease;
   }
@@ -196,7 +189,7 @@ textarea#reasonForLeaving {
 
   .admin-form-group {
     margin-left: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: margin-left 0.3s ease, color 0.3s ease;
   }
 }

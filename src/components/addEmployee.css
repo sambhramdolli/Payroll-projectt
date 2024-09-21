@@ -1,13 +1,9 @@
 .employee-form-container {
   width: 70%; /* Changed to 40% width */
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #2f30312f;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 40px auto;
-  color: #FFFFFF;
-  border: 2px solid #FBFBFB;
+  color: #000;
+  
   box-sizing: border-box;
   margin-right: 40%;
 }
@@ -15,7 +11,7 @@
 .employee-form-title {
   text-align: center;
   margin-bottom: 30px;
-  color: white;
+  color: #000;
 }
 /* Form group style */
 .employee-form-group {
@@ -51,7 +47,7 @@
 .employee-input-field:not(:placeholder-shown) + .employee-input-label {
   top: -10px;
   left: 15px;
-  color: #FFFFFF;
+  color: #000;
 }
 /* Name container styles */
 .employee-name-container {

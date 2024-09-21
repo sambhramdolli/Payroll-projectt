@@ -5,27 +5,19 @@ import { IoIosPersonAdd } from "react-icons/io";
 import { RiArrowDropDownLine, RiLogoutCircleFill } from "react-icons/ri";
 import { FaHandsHelping, FaPrescription } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
-import logoImage from "../assets/S.jpg"; // Your logo image
+import logoImage from "../assets/image (2).png"; // Your logo image
 import profileImage from "../assets/profile.png"; // Your profile image
 import homeButton from "../assets/homeButton.png"; 
 
-const NavBar = ({ onButtonClick,onHomeClick }) => {
+const NavBar = ({ onButtonClick, onHomeClick }) => {
   const [dropdownVisible, setDropdownVisible] = useState({
     profile: false,
-    ticket: false,
-    team: false,
     recruitment: false,
-    training: false,
-    attendance: false,
   });
 
   const dropdownRefs = {
     profile: useRef(null),
-    ticket: useRef(null),
-    team: useRef(null),
     recruitment: useRef(null),
-    training: useRef(null),
-    attendance: useRef(null),
   };
 
   const toggleDropdown = (type) => {
@@ -59,34 +51,9 @@ const NavBar = ({ onButtonClick,onHomeClick }) => {
       <div className="navBar-logoContainer">
         <img src={logoImage} alt="Logo" className='navBar-logo' />
       </div>
-      <div className="employee-navbar__home-button-container">
-        <button className="employee-navbar__home-button" onClick={onHomeClick}>
-          <img src={homeButton} alt="Home" className="employee-navbar__home-button-image" />
-        </button>
-      </div>
+      
 
       <div className='navBar-nav'>
-        {/* Team Dropdown */}
-      {/*  <div className="navBar-dropdownToggle" onClick={() => toggleDropdown('team')} ref={dropdownRefs.team}>
-          <div className='navBar-dropdownHeader'>
-            <p className='navBar-dropdownTitle'>Employee Directory</p>
-            <RiArrowDropDownLine className='navBar-dropdownIcon' />
-          </div>
-          {dropdownVisible.team && (
-            <div className='navBar-dropdownMenu navBar-dropdownMenu-employee'>
-              <button className="navBar-menuItem" onClick={() => onButtonClick('teamlead')}>
-                Employee by Team
-              </button>
-              <button className="navBar-menuItem" onClick={() => onButtonClick('employeebyproject')}>
-                Employee by Project
-              </button>
-              <button className="navBar-menuItem" onClick={() => onButtonClick('employeereport')}>
-                Employee Project Reports
-              </button>
-            </div>
-          )}
-        </div>*/}
-
         {/* Recruitment Dropdown */}
         <div className="navBar-dropdownToggle" onClick={() => toggleDropdown('recruitment')} ref={dropdownRefs.recruitment}>
           <div className='navBar-dropdownHeader'>
@@ -94,7 +61,7 @@ const NavBar = ({ onButtonClick,onHomeClick }) => {
             <RiArrowDropDownLine className='navBar-dropdownIcon' />
           </div>
           {dropdownVisible.recruitment && (
-            <div className='navBar-dropdownMenu navBar-dropdownMenu-recruitment'>
+            <div className='navBar-dropdownMenu'>
               <button className="navBar-menuItem" onClick={() => onButtonClick('interviewscheduling')}>
                 Interview Schedule
               </button>

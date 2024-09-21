@@ -1,5 +1,4 @@
 .emp-help-menu {
-    width: 60%;
     margin: 40px auto;
     padding: 20px;
     background-color: transparent;
@@ -9,7 +8,6 @@
     text-align: center;
     color: #ffffff;
     box-sizing: border-box;
-    background-color: #2f30312f;
     margin-right: 50%;
     border: 2px solid #fbfbfb;
     height: auto;
@@ -18,11 +16,11 @@
 .emp-help-title {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 0%;
 }
 .emp-help-contact {
-    color: white;
+    color: rgb(5, 5, 5);
     margin-bottom: 10px;
 }
 .emp-contact-info {

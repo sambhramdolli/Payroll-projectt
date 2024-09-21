@@ -1,18 +1,22 @@
+/* General Styles */
 body {
   position: fixed;
   width: 100%;
-  height: 100%;
-  background-size: 100%;
+  height: 70%;
+  background-size: 70%;
   background-position: center;
   background-attachment: fixed;
 }
 
+/* Employee Navbar Styles */
 .employee-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  height: 70px; 
 }
 
 .employee-navbar__logo-container {
@@ -21,155 +25,193 @@ body {
 }
 
 .employee-navbar__logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%; /* Smaller logo size */
+  height: 20%;
+  border-radius: 0%;
 }
 
+.employee-navbar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+/* Raise Ticket Button Styles */
+.employee-navbar__raise-ticket {
+  cursor: pointer;
+  margin-left: 20px; /* Adjusted spacing */
+}
+
+.employee-navbar__raise-ticket-label {
+  color: rgb(7, 10, 92); /* Black text color */
+  font-size: 18px; /* Increased font size */
+  margin-right: 20px;
+  font-weight: 600; /* Increased font weight */
+  position: relative; /* For the underline effect */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.employee-navbar__raise-ticket-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 4px;
+  background-color: #1e90ff; /* Underline color */
+  transition: width 0.3s ease; /* Smooth transition for underline */
+}
+
+.employee-navbar__raise-ticket:hover .employee-navbar__raise-ticket-label {
+  color: #1e90ff; /* Change text color on hover */
+}
+
+.employee-navbar__raise-ticket:hover .employee-navbar__raise-ticket-label::after {
+  width: 100%; /* Show the underline on hover */
+}
+
+
+/* Clock In Button Styles */
+/* Clock In Button Styles */
+.employee-navbar__clock-in {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.employee-navbar__clock-in-icon {
+  width: 24px; /* Adjusted size */
+  height: 24px;
+  margin-right: 4px; /* Add spacing between icon and label */
+  color: rgba(7, 10, 92, 0.997); 
+}
+
+.employee-navbar__clock-in-label {
+  color: rgb(7, 10, 92); /* Black text color */
+  font-size: 18px; /* Increased font size */
+  font-weight: 600; /* Make the text stand out */
+  white-space: nowrap; /* Ensure text doesn't wrap */
+  position: relative; /* For the underline effect */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.employee-navbar__clock-in-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 4px;
+  background-color: #1e90ff; /* Blue underline */
+  transition: width 0.3s ease; /* Smooth transition for underline */
+}
+
+.employee-navbar__clock-in:hover .employee-navbar__clock-in-label {
+  color: #1e90ff; /* Change text color on hover */
+}
+
+.employee-navbar__clock-in:hover .employee-navbar__clock-in-label::after {
+  width: 100%; /* Show the underline on hover */
+}
+
+
+/* Profile Dropdown Styles */
+.employee-navbar__profile-icon {
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px; /* Adjusted spacing */
+}
+
+.employee-navbar__profile-image {
+  width: 50px; /* Adjusted size for the profile image */
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.employee-navbar__profile-dropdown {
+  position: absolute;
+  top: 50px; /* Adjusted for the new navbar height */
+  right: 0;
+  font-size: 14px;
+  border-radius: 5px;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for dropdown */
+}
+
+.employee-navbar__profile-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.employee-navbar__profile-item:hover {
+  color: rgb(35, 178, 245); /* Light blue on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background on hover */
+}
+
+.employee-navbar__icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Additional Styling */
+.employee-navbar__dropdown-icon {
+  color: rgb(3, 3, 3);
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.employee-navbar__dropdown-label {
+  color: #000000;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Home Button Styles */
 .employee-navbar__home-button-container {
   display: flex;
   align-items: center;
-  margin-left: 60%;
+  margin-left: auto;
 }
 
 .employee-navbar__home-button {
-  background: none; /* Remove any background */
-  padding: 0; /* Remove any padding */
-  border: none; /* Remove any border */
-  cursor: pointer; /* Make it clickable */
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .employee-navbar__home-button-image {
-  width: 50px; /* Adjust the size of your home button icon */
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .employee-navbar__home-button:hover .employee-navbar__home-button-image {
-/* Slightly lighter background on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.employee-navbar__home-button:active .employee-navbar__home-button-image {
- /* Even lighter background on click */
-  transform: scale(0.98); /* Slightly shrink on click */
-}
-
-.employee-navbar__nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  justify-content: space-between;
-}
-
-.employee-navbar__profile-icon {
-  position: relative;
-  cursor: pointer;
-}
-
-.employee-navbar__profile-image {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-top: 5px;
-}
-
-.employee-navbar__profile-dropdown {
-  position: absolute;
-  top: 100px;
-  right: 0;
-  font-size: 25px;
-  border-radius: 5px;
-  z-index: 1000;
-  background-color: rgb(7, 10, 92);
-  padding: 10px;
-}
-
-.employee-navbar__profile-item {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  background-color: rgb(7, 10, 92);
-}
-
-.employee-navbar__profile-item:hover {
-  color: rgb(35, 178, 245);
   transform: scale(1.05);
 }
 
-.employee-navbar__icon {
-  font-size: 30px;
-}
-
-.employee-navbar__dropdown-icon {
-  color: white;
-  font-size: 50px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-right: 25px;
-}
-
-.employee-navbar__dropdown-label {
-  color: #ddd;
-  font-size: 25px;
-  margin-right: 25px;
-}
-
-.employee-navbar__ticket-icon {
-  position: relative;
-  cursor: pointer;
-}
-
-.employee-navbar__ticket-text {
-  display: flex;
-  align-items: center;
-}
-
-.employee-navbar__ticket-dropdown {
-  position: absolute;
-  font-size: 25px;
-  border-radius: 5px;
-  background-color: #2f30312f;
-  width: 80%;
-}
-
-.employee-navbar__ticket-item {
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  background-color: rgb(7, 10, 92);
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  width: 80%;
-  text-align: center;
-  margin-left: 10%;
-}
-
-.employee-navbar__clock-in {
-  width: 50px; 
-  height: 50px;
-  cursor: pointer;
-  margin-right: 50px; 
-  margin-top: 8px;
-}
-
-.employee-navbar__clock-in-icon {
-  width: 100%;
-  height: 100%;
+.employee-navbar__home-button:active .employee-navbar__home-button-image {
+  transform: scale(0.98);
 }

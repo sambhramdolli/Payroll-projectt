@@ -1,25 +1,20 @@
 /* Main status page container */
 .admin-status-page {
   padding: 20px;
-  width: 60%;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 10px;
-  color: #ffffff;
-  background-color: #2f30312f; /* Adjust background color if needed */
-  border: 2px solid #fbfbfb;
+  color: #000000;
   margin: 40px auto;
   box-sizing: border-box;
   height: 70vh;
   margin-right: 50%;
-
 }
 
 /* Title style */
 .admin-status-title {
   font-size: 30px;
-  color: #f5eded;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000;
 }
 
 /* Employee details */

@@ -1,8 +1,8 @@
 body {
   position: fixed;
   width: 100%;
-  height: 100%;
-  background-size: 100%;
+  height: 70%;
+  background-size: 70%;
   background-position: center;
   background-attachment: fixed;
 }
@@ -11,17 +11,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  height: 70px;
 }
 
 .navBar-logoContainer {
   display: flex;
   align-items: center;
-  text-align: left;
 }
 
 .navBar-logo {
+  width: 20%;
+  height: 20%;
+}
+
+.employee-navbar__home-button {
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-navbar__home-button-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -29,137 +42,99 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.employee-navbar__home-button {
-  background: none; /* Remove any background */
-  padding: 0; /* Remove any padding */
-  border: none; /* Remove any border */
-  cursor: pointer; /* Make it clickable */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.employee-navbar__home-button-image {
-  width: 50px; /* Adjust the size of your home button image */
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .employee-navbar__home-button:hover .employee-navbar__home-button-image {
-  background-color: #45a049; /* Darker green on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #45a049;
+  transform: scale(1.05);
 }
-
-.employee-navbar__home-button:active .employee-navbar__home-button-image {
-  background-color: #3e8e41; /* Even darker green on click */
-  transform: scale(0.98); /* Slightly shrink on click */
-}
-
 
 .navBar-nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .navBar-dropdownToggle {
-  position: relative;
   cursor: pointer;
- 
-  z-index: 1000; /* Ensures dropdown is on top of most other elements */
+  margin-left: 20px;
 }
 
 .navBar-profileImage {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
- 
+  margin-right: 10px;
 }
 
 .navBar-dropdownHeader {
   display: flex;
   align-items: center;
-  
 }
 
 .navBar-dropdownTitle {
-  color: #ddd;
+  color: rgba(7, 10, 92, 0.997); 
   font-size: 25px;
 }
 
 .navBar-dropdownIcon {
-  color: white;
+  color: rgba(7, 10, 92, 0.997); 
   font-size: 50px;
   margin-left: 10px;
 }
 
 /* Dropdown menu styles */
-.navBar-dropdownMenu-employee, .navBar-dropdownMenu-recruitment {
-  top: 100%;
-  right: 0;
+.navBar-dropdownMenu {
+  position: absolute;
+  background-color: rgba(7, 10, 92, 0.997); 
   border-radius: 5px;
-  background-color: rgb(7, 10, 92);
-   /* Ensures dropdown is on top of other elements */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navBar-menuItem {
   font-size: 18px;
-  z-index: 1001;
-  position: absolute;
-  margin-top: 20px;
-  background-color: transparent;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  color: rgb(233, 225, 225);
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
   width: 100%;
   text-align: left;
-  text-decoration: none;
 }
 
 .navBar-profileDropdownMenu {
   position: absolute;
-  top: 100px;
+  top: 50px; /* Adjusted for the new navbar height */
   right: 0;
-  font-size: 25px;
+  font-size: 14px;
   border-radius: 5px;
   z-index: 1000;
-  background-color: rgb(7, 10, 92);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for dropdown */
 }
 
 .navBar-profileMenuItem {
-  padding: 25px;
-  margin-left: 0px;
-  margin-right: 10px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: rgb(1, 1, 1);
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   width: 100%;
   text-align: left;
-  background-color: transparent;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  gap: 30px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
 .navBar-profileIcon {
-  font-size: 30px;
+  font-size: 18px;
   margin-right: 10px;
 }
 
 .navBar-profileMenuItem:hover {
   color: rgb(35, 178, 245);
   background-color: rgba(35, 178, 245, 0.1);
-}
-
-/* Fixing the gap between dropdowns */
-.navBar-dropdownToggle {
-  margin-right: 70px;
 }

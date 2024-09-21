@@ -1,25 +1,20 @@
 .my-tickets {
-    width: 70%;
     height: 70vh;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     position: relative;
-    color: #ffffff;
-    border: 2px solid #fbfbfb;
+    color: #000;
     margin: 40px auto;
     box-sizing: border-box;
-    background-color: #2f30312f;
     margin-right: 40%;
 }
 
 .my-tickets h1 {
     text-align: center;
     margin-bottom: 20px;
-    color:white; /* Darker color for better contrast */
+    color: #000; /* Darker color for better contrast */
 }
 .sds{
-    color: white;
+    color: #000;
     font-size: 20px;
 }
 
@@ -50,7 +45,7 @@
 .ticket-card p {
     margin: 10px 0;
     font-size: 16px;
-    color: #555; /* Softer text color */
+    color: #000; /* Softer text color */
 }
 
 .ticket-card a {

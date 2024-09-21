@@ -1,12 +1,7 @@
 .leave-requests-container {
   padding: 20px;
-  width: 70%;
-  border: 2px solid #fbfbfb;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   height: 70vh;
-  background-color: #2f30312f;
-  color: #ffffff;
+  color: #000;
   overflow-y: auto;
   margin: 40px auto;
   box-sizing: border-box;
@@ -26,7 +21,7 @@
 .leave-requests-header {
   text-align: center;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #000;
 }
 
 .leave-requests-table {

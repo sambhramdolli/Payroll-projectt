@@ -1,23 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import '../Employee/EmployeeNavbar.css';
 import { IoIosPersonAdd } from "react-icons/io";
-import { RiArrowDropDownLine, RiLogoutCircleFill } from "react-icons/ri";
+import { RiLogoutCircleFill } from "react-icons/ri";
 import { FaHandsHelping, FaPrescription } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
-import img1 from "../../assets/S.jpg"; // Your logo image
-import img2 from "../../assets/profile.png"; // Your profile image
-// import homeButton from "../../assets/homeButton.png"; // No longer needed
+import img1 from "../../assets/image (2).png";
+import img2 from "../../assets/profile.png";
 
-const EmployeeNavBar = ({ onButtonClick, onHomeClick }) => {
+const EmployeeNavBar = ({ onButtonClick }) => {
   const [dropdownVisible, setDropdownVisible] = useState({
     profile: false,
-    ticket: false,
   });
 
   const dropdownRefs = {
     profile: useRef(null),
-    ticket: useRef(null),
   };
 
   const toggleDropdown = (type) => {
@@ -25,7 +21,7 @@ const EmployeeNavBar = ({ onButtonClick, onHomeClick }) => {
       ...prev,
       [type]: !prev[type],
       ...Object.keys(dropdownVisible).reduce((acc, key) => {
-        if (key !== type) acc[key] = false; // Close other dropdowns
+        if (key !== type) acc[key] = false;
         return acc;
       }, {}),
     }));
@@ -52,41 +48,21 @@ const EmployeeNavBar = ({ onButtonClick, onHomeClick }) => {
         <img src={img1} alt="Logo" className='employee-navbar__logo' />
       </div>
 
-      <div className="employee-navbar__home-button-container">
-        <button className="employee-navbar__home-button" onClick={onHomeClick}>
-          <img src="https://img.icons8.com/?size=100&id=84005&format=png&color=FFFFFF" alt="Home" className="employee-navbar__home-button-image" />
-        </button>
-      </div>
-
       <div className='employee-navbar__nav'>
-        {/* Ticket Dropdown */}
-        <div className="employee-navbar__ticket-icon" onClick={() => toggleDropdown('ticket')} ref={dropdownRefs.ticket}>
-          <div className='employee-navbar__ticket-text'>
-            <p className='employee-navbar__dropdown-label'>Raise Tickets</p>
-            <RiArrowDropDownLine className='employee-navbar__dropdown-icon' />
-          </div>
-          {dropdownVisible.ticket && (
-            <div className='employee-navbar__ticket-dropdown'>
-              <div className="employee-navbar__ticket-menu">
-                <button className="employee-navbar__ticket-item" onClick={() => onButtonClick('raiseticket')}>
-                  Raise Ticket
-                </button>
-              </div>
-            </div>
-          )}
+        <div className="employee-navbar__raise-ticket" onClick={() => onButtonClick('raiseticket')}>
+          <p className='employee-navbar__raise-ticket-label'>Raise Ticket</p>
         </div>
 
-        {/* Clock In Button */}
         <div className="employee-navbar__clock-in" onClick={() => onButtonClick('clockin')}>
-          <img src="https://img.icons8.com/?size=100&id=82767&format=png&color=FFFFFF" alt="Clock In" className='employee-navbar__clock-in-icon' />
+          <img src="https://img.icons8.com/?size=100&id=82767&format=png&color=070A61" alt="Clock In" className='employee-navbar__clock-in-icon' />
+          <p className='employee-navbar__clock-in-label'>ClockIn&Out</p>
         </div>
 
-        {/* Profile Dropdown */}
         <div className="employee-navbar__profile-icon" onClick={() => toggleDropdown('profile')} ref={dropdownRefs.profile}>
           <img src={img2} alt="Profile" className="employee-navbar__profile-image" />
           {dropdownVisible.profile && (
             <div className="employee-navbar__profile-dropdown">
-              <button className="employee-navbar__profile-item" onClick={() => onButtonClick('myProfile')}>
+              <button className="employee-navbar__profile-item" onClick={() => onButtonClick('myprofile')}>
                 <IoIosPersonAdd className='employee-navbar__icon' />
                 My Profile
               </button>
